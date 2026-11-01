@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <div class="dashboard-wrap">
+      <aside class="sidebar">
+        <div class="brand-row">
+          <div class="brand-badge small">NX</div>
+          <span>Next Access</span>
+        </div>
+
+        <nav class="nav-menu">
+          <a href="#" class="nav-item active">Visão geral</a>
+          <a href="#" class="nav-item">Projetos</a>
+          <a href="#" class="nav-item">Relatórios</a>
+          <a href="#" class="nav-item">Configurações</a>
+        </nav>
+
+        <button class="logout-btn" type="button" id="logoutBtn">Sair</button>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <div>
+            <p class="eyebrow">Painel</p>
+            <h1>Olá, <span id="userName">Usuário</span></h1>
+          </div>
+          <button class="theme-toggle" type="button" aria-label="Alternar tema">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </button>
+        </header>
+
+        <section class="stats-grid">
+          <article class="stat-card accent">
+            <span>Total de acessos</span>
+            <strong>28.4K</strong>
+          </article>
+          <article class="stat-card">
+            <span>Atividades</span>
+            <strong>1.2K</strong>
+          </article>
+          <article class="stat-card">
+            <span>Produtividade</span>
+            <strong>94%</strong>
+          </article>
+        </section>
+
+        <section class="panel">
+          <h2>Resumo do dia</h2>
+          <ul class="activity-list">
+            <li><span>Login confirmado</span><strong>08:40</strong></li>
+            <li><span>Relatório enviado</span><strong>10:15</strong></li>
+            <li><span>Projeto revisado</span><strong>13:20</strong></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

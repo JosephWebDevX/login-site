@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="signup">
+    <div class="page-shell">
+      <div class="background-glow glow-one"></div>
+      <div class="background-glow glow-two"></div>
+
+      <main class="login-card">
+        <section class="brand-panel">
+          <div class="brand-badge">NX</div>
+          <h1>Crie sua conta</h1>
+          <p>
+            Comece hoje mesmo a aproveitar uma experiência segura, organizada e preparada para acompanhar seu crescimento.
+          </p>
+          <ul class="feature-list">
+            <li>Cadastro em poucos passos</li>
+            <li>Controle total do acesso</li>
+            <li>Suporte dedicado</li>
+          </ul>
+        </section>
+
+        <section class="form-panel">
+          <div class="top-row">
+            <span class="mini-label">Cadastro</span>
+            <button class="theme-toggle" type="button" aria-label="Alternar tema">
+              <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            </button>
+          </div>
+
+          <h2>Registrar-se</h2>
+
+          <form id="signupForm" novalidate>
+            <div class="input-group">
+              <label for="name">Nome completo</label>
+              <div class="input-wrap">
+                <span class="icon">👤</span>
+                <input id="name" type="text" placeholder="Seu nome" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="signupEmail">E-mail</label>
+              <div class="input-wrap">
+                <span class="icon">@</span>
+                <input id="signupEmail" type="email" placeholder="seu@email.com" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="signupPassword">Senha</label>
+              <div class="input-wrap">
+                <span class="icon">🔒</span>
+                <input id="signupPassword" type="password" placeholder="Crie uma senha" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="confirmPassword">Confirmar senha</label>
+              <div class="input-wrap">
+                <span class="icon">🔐</span>
+                <input id="confirmPassword" type="password" placeholder="Repita a senha" required />
+              </div>
+            </div>
+
+            <button type="submit" class="primary-btn">Criar conta</button>
+          </form>
+
+          <div class="options-row" style="margin-top: 18px;">
+            <span class="muted-text">Já tem uma conta?</span>
+            <a href="index.html" class="link">Voltar para login</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
